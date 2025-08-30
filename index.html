@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Wanderlust</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- Navbar Start -->
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+      <svg class="brand-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+    </svg>
+    <a class="navbar-brand" href="#">Wanderlust</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+      </ul>
+      <div class="d-flex">
+        <a href="#" class="btn btn-book">Book Now</a>
+        <a href="#" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#authModal">Login / Sign Up</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Your Dream Vacation Awaits</h1>
+    <p>Discover breathtaking destinations with us</p>
+    <a href="#" class="btn btn-lg">Explore Now</a>
+  </div>
+</section>
+
+<!-- Login / Sign Up Modal -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="authModalLabel">Login / Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label fw-semibold">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+          </div>
+          <button type="submit" class="btn w-100 text-white" style="background-color:#3a5d81;">Continue</button>
+        </form>
+        <p class="text-center mt-3 mb-0" style="font-size: 0.9rem;">
+          Already have an account? <a href="#" class="text-decoration-none" style="color:#fff;">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Popular Destinations Section -->
+<section class="popular-destinations">
+  <h2 class="animate-on-scroll">Popular Destinations</h2>
+  <p class="animate-on-scroll">Explore our top travel spots loved by wanderers worldwide.</p>
+  <div class="destinations-grid">
+    <div class="destination animate-on-scroll">
+      <img src="image/paris.jpg" alt="Paris, France" />
+      <div class="overlay">Paris, France</div>
+    </div>
+    <div class="destination animate-on-scroll">
+      <img src="image/bali.jpg" alt="Bali, Indonesia" />
+      <div class="overlay">Bali, Indonesia</div>
+    </div>
+    <div class="destination animate-on-scroll">
+      <img src="image/usa.jpg" alt="New York City, USA" />
+      <div class="overlay">New York City, USA</div>
+    </div>
+    <div class="destination animate-on-scroll">
+      <img src="image/greece.jpg" alt="Santorini, Greece" />
+      <div class="overlay">Santorini, Greece</div>
+    </div>
+    <div class="destination animate-on-scroll">
+      <img src="image/tokyo.jpg" alt="Tokyo, Japan" />
+      <div class="overlay">Tokyo, Japan</div>
+    </div>
+    <div class="destination animate-on-scroll">
+      <img src="image/Cape-Town.jpg" alt="Cape Town, South Africa" />
+      <div class="overlay">Cape Town, South Africa</div>
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us py-5">
+  <div class="container text-center">
+    <h2 class="mb-5">Reason For Choosing Us</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="icon mb-3">
+            <i class="bi bi-patch-check-fill"></i>
+          </div>
+          <h5 class="mb-2">Tried and Trusted</h5>
+          <p>We're trusted worldwide by millions of travelers just like you.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="icon mb-3">
+            <i class="bi bi-headset"></i>
+          </div>
+          <h5 class="mb-2">Reliable Support</h5>
+          <p>We’re here for you. Contact us anytime by phone, email, or chat.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="icon mb-3">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h5 class="mb-2">One-stop Travel Partner</h5>
+          <p>Your search ends here — we’ve got your entire trip covered!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Best Offers Section -->
+<section id="best-offers" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Heading -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" data-aos="fade-right">
+        <h2 class="fw-bold">🌟 Best Travel Offers</h2>
+        <p class="text-muted">Discover our handpicked packages with the best deals for your dream vacations.</p>
+        <div class="d-flex mt-3">
+          <button class="btn btn-outline me-3" type="button" data-bs-target="#offersCarousel" data-bs-slide="prev">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="btn btn-outline" type="button" data-bs-target="#offersCarousel" data-bs-slide="next">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="col-lg-8 col-md-12" data-aos="fade-left">
+        <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6 col-12">
+                  <div class="offer-card">
+                    <img src="image/thailan.jpg" class="img-fluid rounded" alt="Thailand">
+                    <div class="offer-info">
+                      <h5>Thailand Escape</h5>
+                      <p>5 Days / 4 Nights</p>
+                      <span class="price">₹45,000</span>
+                      <a href="#" class="btn btn-book">Read More →</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="offer-card">
+                    <img src="image/switzerland.avif" class="img-fluid rounded" alt="Switzerland">
+                    <div class="offer-info">
+                      <h5>Switzerland Beauty</h5>
+                      <p>7 Days / 6 Nights</p>
+                      <span class="price">₹95,000</span>
+                      <a href="#" class="btn btn-book">Read More →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6 col-12">
+                  <div class="offer-card">
+                    <img src="image/maldivs.jpg" class="img-fluid rounded" alt="Maldives">
+                    <div class="offer-info">
+                      <h5>Maldives Getaway</h5>
+                      <p>6 Days / 5 Nights</p>
+                      <span class="price">₹75,000</span>
+                      <a href="#" class="btn btn-book">Read More →</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="offer-card">
+                    <img src="image/newze.jpg" class="img-fluid rounded" alt="New Zealand">
+                    <div class="offer-info">
+                      <h5>New Zealand Romance</h5>
+                      <p>3 Days / 2 Nights</p>
+                      <span class="price">₹25,000</span>
+                      <a href="#" class="btn btn-book">Read More →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="domestic-tours">
+  <div class="section-header animate-on-scroll">
+    <h2>Domestic Tours</h2>
+    <p>Discover the beauty of our country with these handpicked destinations.</p>
+  </div>
+
+  <div class="tours-grid">
+    <div class="tour-card animate-on-scroll">
+      <img src="image/jaipur.jpg" alt="Jaipur, Rajasthan">
+      <div class="tour-info">
+        <h3>Jaipur, Rajasthan</h3>
+        <p>The Pink City, rich with heritage forts and vibrant culture.</p>
+        <a href="#" class="btn btn-book">View Details..</a>
+      </div>
+    </div>
+
+    <div class="tour-card animate-on-scroll">
+      <img src="image/kerala.jpeg" alt="Kerala Backwaters">
+      <div class="tour-info">
+        <h3>Kerala Backwaters</h3>
+        <p>Serene houseboat rides through lush green waterways.</p>
+        <a href="#" class="btn btn-book">View Details..</a>
+      </div>
+    </div>
+
+    <div class="tour-card animate-on-scroll">
+      <img src="image/shimla.jpeg" alt="Shimla, Himachal Pradesh">
+      <div class="tour-info">
+        <h3>Shimla, Himachal Pradesh</h3>
+        <p>Snowy hills, colonial charm, and scenic mountain views.</p>
+        <a href="#" class="btn btn-book">View Details..</a>
+      </div>
+    </div>
+
+    <div class="tour-card animate-on-scroll">
+      <img src="image/goa.jpeg" alt="Goa Beaches">
+      <div class="tour-info">
+        <h3>Goa Beaches</h3>
+        <p>Golden sands, sunsets, and vibrant nightlife.</p>
+        <a href="#" class="btn btn-book">View Details..</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="section-header animate-on-scroll">
+    <h2>What Our Clients Say</h2>
+    <p>Real experiences from happy travelers who explored with us.</p>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper animate-on-scroll">
+    <div class="swiper-wrapper">
+
+      <!-- Testimonial 1 -->
+      <div class="swiper-slide testimonial-card">
+        <div class="client-img">
+          <img src="image/riya.jpg" alt="Client 1">
+        </div>
+        <p class="testimonial-text">
+          "An unforgettable journey! Everything was perfectly organized and stress-free."
+        </p>
+        <h3>Riya Sharma</h3>
+        <span class="client-role">Jaipur, Rajasthan</span>
+        <div class="star-rating mt-1">
+                ★★★★★
+              </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="swiper-slide testimonial-card">
+        <div class="client-img">
+          <img src="image/arav.jpg" alt="Client 2">
+        </div>
+        <p class="testimonial-text">
+          "Breathtaking views and excellent hospitality. Highly recommended!"
+        </p>
+        <h3>Arjun Mehta</h3>
+        <span class="client-role">Kerala Backwaters</span>
+        <div class="star-rating mt-1">
+                ★★★★★
+              </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="swiper-slide testimonial-card">
+        <div class="client-img">
+          <img src="image/karan.jpg" alt="Client 3">
+        </div>
+        <p class="testimonial-text">
+          "Our honeymoon was unforgettable. Thank you for a lifetime memory!"
+        </p>
+        <h3>Karan Sharma</h3>
+        <span class="client-role">Thailand</span>
+        <div class="star-rating mt-1">
+                ★★★★★
+              </div>
+      </div>
+
+       <!-- Testimonial 4 -->
+      <div class="swiper-slide testimonial-card">
+        <div class="client-img">
+          <img src="image/ayan.jpg" alt="Client 4">
+        </div>
+        <p class="testimonial-text">
+          "The entire trip was seamless and magical. Highly recommend their service!"
+        </p>
+        <h3>Ayan Roy</h3>
+        <span class="client-role">Indonesia</span>
+        <div class="star-rating mt-1">
+                ★★★★★
+              </div>
+      </div>
+
+       <!-- Testimonial 5 -->
+      <div class="swiper-slide testimonial-card">
+        <div class="client-img">
+          <img src="image/nirvi.jpg" alt="Client 5">
+        </div>
+        <p class="testimonial-text">Exceptional and fantastic support team! I had the best solo trip to Vietnam."
+        </p>
+        <h3>Nirvi Gupta</h3>
+        <span class="client-role">Paris</span>
+        <div class="star-rating mt-1">
+                ★★★★★
+              </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="list">
+<div class="booking-container">
+    <h2>Book Your Dream Trip</h2>
+    <form id="bookingForm">
+        <div class="form-row">
+            <div>
+                <label for="people">Number of People</label>
+                <input type="number" id="people" name="people" min="1" placeholder="2"required>
+            </div>
+
+            <div>
+                <label for="dates">Travel Dates</label>
+                <input type="date" id="dates" name="dates" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="place">Tour Place</label>
+                <input type="text" id="place" name="place" placeholder="e.g. Paris, Bali" required>
+            </div>
+
+            <div>
+                <label for="accommodation">Accommodation Type</label>
+                <select id="accommodation" name="accommodation" required>
+                    <option value="">Select Type</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="resort">Resort</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="villa">Villa</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div>
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Select Payment</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="upi">UPI</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label for="message">Write a Message (Optional)</label>
+            <textarea id="message" name="message" placeholder="Any special requests..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Booking</button>
+        <div class="success-message" id="successMessage">✅ Your booking has been submitted successfully!</div>
+    </form>
+</div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Logo -->
+        <div class="footer-col">
+            <img src="image/brand.png" alt="Logo" class="footer-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="footer-col">
+            <h3>ABOUT</h3>
+            <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Travel Info -->
+        <div class="footer-col">
+            <h3>TRAVEL INFORMATION</h3>
+            <ul>
+                <li><a href="#">Travel updates</a></li>
+                <li><a href="#">Before you go</a></li>
+                <li><a href="#">Holiday information</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Customer support</a></li>
+            </ul>
+        </div>
+
+        <!-- Sections -->
+        <div class="footer-col">
+            <h3>SECTIONS</h3>
+            <ul>
+                <li><a href="#">Hotel Deals</a></li>
+                <li><a href="#">Cruise Deals</a></li>
+                <li><a href="#">Vacation Deals</a></li>
+                <li><a href="#">Air Deals</a></li>
+                <li><a href="#">Car Deals</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Hotel Owners</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <a href="#">PRIVACY POLICY</a> | 
+        <a href="#">TERMS & CONDITIONS</a>
+        <p>© 2016 DUNHILL TRAVEL DEALS</p>
+    </div>
+</footer>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Scroll fade-up animation
+  const elements = document.querySelectorAll(".animate-on-scroll");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  elements.forEach(el => observer.observe(el));
+
+  // Swiper initialization
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: { el: ".swiper-pagination", clickable: true },
+  navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+  breakpoints: {
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 4 }
+  }
+});
+});
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    this.querySelectorAll("input[required], select[required]").forEach(field => {
+        if (!field.value.trim()) {
+            field.style.borderColor = "red";
+            isValid = false;
+        } else {
+            field.style.borderColor = "#ccc";
+        }
+    });
+
+    if (isValid) {
+        const successMsg = document.getElementById("successMessage");
+        successMsg.style.display = "block";
+
+        // Disable the submit button after first successful submission
+        const submitBtn = this.querySelector("button[type='submit']");
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Submitted ✅"; // Optional text change
+        }
+
+        // Clear form after 2 seconds (optional)
+        setTimeout(() => {
+            this.reset();
+        }, 2000);
+    }
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
