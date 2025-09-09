@@ -36,5 +36,22 @@ Follow these steps to get a local copy up and running:
    ```bash
    git clone https://github.com/Shreya-231/TravelAgency_website.git
 2.  Navigate to the project folder:
-    cd TravelAgency_website
 
+     cd TravelAgency_website
+3.Open index.html in your browser
+
+That’s it—you’re ready to explore! 🎉
+
+## 🤝 Contributing
+1. **Fork** the repository.  
+2. **Create a new branch** (`git checkout -b feature-branch`).  
+3. **Make your changes** and commit (`git commit -m 'Add new feature'`).  
+4. **Push to your branch** (`git push origin feature-branch`).  
+5. Open a **Pull Request**.  
+
+---
+
+## ⭐ Support
+If you like this project, don’t forget to **give it a star ⭐** on GitHub—it really helps!  
+
+---
