@@ -5,6 +5,10 @@ A **responsive and modern Travel Agency website** built with **HTML, CSS, Bootst
 Explore breathtaking destinations and book your next adventure with a seamless user experience. ✈️🌴
 
 ---
+🔗 Live Demo
+Experience the website live in your browser:
+
+👉 View Live Demo (Replace with your actual GitHub Pages link)
 
 ## ✨ Key Features
 - **Fully Responsive Design** – Looks great on desktops, tablets, and smartphones.  
@@ -16,11 +20,11 @@ Explore breathtaking destinations and book your next adventure with a seamless u
 ---
 
 ## 🛠️ Technologies Used
-- **HTML5**  
-- **CSS3**  
-- **Bootstrap 5.3**  
-- **JavaScript**  
-
+Technology	Purpose		
+HTML5	Semantic structure and content.		
+CSS3	Custom styling and layout refinements.		
+Bootstrap 5.3	Responsive grid system and UI components.		
+JavaScript	Form logic, interactive elements, and UI triggers.		
 ---
 
 ## 🚀 Getting Started
@@ -35,10 +39,13 @@ Follow these steps to get a local copy up and running:
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/Shreya-231/TravelAgency_website.git
+   
 2.  Navigate to the project folder:
-
-     cd TravelAgency_website
-3.Open index.html in your browser
+   ```bash
+  cd TravelAgency_website
+```
+3.Launch the project
+Simply double-click index.html or use the Live Server extension in VS Code.
 
 That’s it—you’re ready to explore! 🎉
 
@@ -50,6 +57,9 @@ That’s it—you’re ready to explore! 🎉
 5. Open a **Pull Request**.  
 
 ---
+📄 License
+Distributed under the MIT License. See LICENSE for more information.  
+
 
 ## ⭐ Support
 If you like this project, don’t forget to **give it a star ⭐** on GitHub—it really helps!  
