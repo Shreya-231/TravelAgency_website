@@ -8,7 +8,8 @@ Explore breathtaking destinations and book your next adventure with a seamless u
 🔗 Live Demo
 Experience the website live in your browser:
 
-👉 View Live Demo (Replace with your actual GitHub Pages link)
+[Live demo]((https://shreya-231.github.io/TravelAgency_website/))
+
 
 ## ✨ Key Features
 - **Fully Responsive Design** – Looks great on desktops, tablets, and smartphones.  
@@ -20,12 +21,15 @@ Experience the website live in your browser:
 ---
 
 ## 🛠️ Technologies Used
-Technology	Purpose		
-HTML5	Semantic structure and content.		
-CSS3	Custom styling and layout refinements.		
-Bootstrap 5.3	Responsive grid system and UI components.		
-JavaScript	Form logic, interactive elements, and UI triggers.		
----
+Technology : Purpose
+
+HTML5 : Semantic structure and content.
+
+CSS3 : Custom styling and layout refinements.
+
+Bootstrap 5.3 : Responsive grid system and UI components.
+
+JavaScript : "Form logic, interactive elements, and UI triggers."
 
 ## 🚀 Getting Started
 
@@ -42,7 +46,7 @@ Follow these steps to get a local copy up and running:
    
 2.  Navigate to the project folder:
    ```bash
-  cd TravelAgency_website
+   cd TravelAgency_website
 ```
 3.Launch the project
 Simply double-click index.html or use the Live Server extension in VS Code.
@@ -58,10 +62,13 @@ That’s it—you’re ready to explore! 🎉
 
 ---
 📄 License
+
+
 Distributed under the MIT License. See LICENSE for more information.  
 
 
 ## ⭐ Support
+
 If you like this project, don’t forget to **give it a star ⭐** on GitHub—it really helps!  
 
 ---
